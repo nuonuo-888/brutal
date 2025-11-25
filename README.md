@@ -4,7 +4,17 @@ Brutal is a minimal neobrutalist theme for [Astro](https://astro.build/). It's b
 
 The theme has no JavaScript integration out of the box, but can always be added of course.
 
-This template is based on [my own personal website](<https://www.elian.codes/>), with some more generic things added.
+This template is based on [my own personal website](https://www.elian.codes/), with some more generic things added.
+
+## 🚀 Deploy
+
+[![Deploy to Tencent EdgeOne Pages](https://img.shields.io/badge/Deploy-Tencent%20EdgeOne%20Pages-006EFF?style=for-the-badge&logo=tencentqq&logoColor=white)](https://edgeone.ai/pages/new?template=https%3A%2F%2Fgithub.com%2Fnuonuo-888%2Fbrutal&output-directory=dist&build-command=pnpm+run+build&install-command=pnpm+install&origin_from=childtom)
+
+The one-click button above clones `nuonuo-888/brutal`, installs dependencies with `pnpm`, runs `pnpm run build`, and serves the generated `dist/` folder automatically on Tencent EdgeOne Pages.
+
+## 👁 Preview
+
+[![Preview](https://img.shields.io/badge/Preview-4ECCA3?style=for-the-badge&logo=globe&logoColor=white)](https://brutal.edgeone.app/)
 
 ## Usage
 
@@ -47,10 +57,10 @@ In this theme, I'm using [UnoCSS](https://uno.antfu.me/) to generate the CSS. It
 To generate the sitemap, you don't need to do anything. It's automatically generated when you build your site. You'll just need to switch out the `site` on `astro.config.ts` to your own.
 
 ```js title="astro.config.mjs"
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
 export default defineConfig({
-  site: 'https://example.com',
+  site: "https://example.com",
 });
 ```
 
