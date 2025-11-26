@@ -5,12 +5,7 @@ import edgeoneAdapter from '@edgeone/astro';
 
 export default defineConfig({
   // used to generate images
-  site:
-    process.env.VERCEL_ENV === 'production'
-      ? 'https://brutal.elian.codes/'
-      : process.env.VERCEL_URL
-      ? `https://${process.env.VERCEL_URL}/`
-        : 'https://localhost:3000/',
+  site: 'https://brutal.edgeone.app/',
   adapter: edgeoneAdapter(),
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
